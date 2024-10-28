@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/light.css" id="theme">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header-container">
+                <h1 style="padding-right: 35px;">Calculadora</h1>
+                <button style="background: none; border: none;" onclick="mudarTema()">
+                    <i class="ri-moon-fill ri-2x" id="tema_icon"></i>
+                </button>
+            </div>
+            <div class="primeira-linha">
+                <input type="text" name="resultado" id="resultado" placeholder="Resultado" autocomplete="off">
+                <input type="button" name="limpar" id="limpar" value="C" onclick="resultado.value = ''">
+            </div>
+            <div class="segunda-linha">
+                <input type="button" value="1" onclick="adicionarNum(1)">
+                <input type="button" value="2" onclick="adicionarNum(2)">
+                <input type="button" value="3" onclick="adicionarNum(3)">
+                <input type="button" value="+" onclick="adicionarNum('+')">
+            </div>
+            <div class="terceira-linha">
+                <input type="button" value="4" onclick="adicionarNum(4)">
+                <input type="button" value="5" onclick="adicionarNum(5)">
+                <input type="button" value="6" onclick="adicionarNum(6)">
+                <input type="button" value="-" onclick="adicionarNum('-')">
+            </div>
+            <div class="quarta-linha">
+                <input type="button" value="7" onclick="adicionarNum(7)">
+                <input type="button" value="8" onclick="adicionarNum(8)">
+                <input type="button" value="9" onclick="adicionarNum(9)">
+                <input type="button" value="x" onclick="adicionarNum('*')">
+            </div>
+            <div class="quinta-linha">
+                <input type="button" value="/" onclick="adicionarNum('/')">
+                <input type="button" value="0" onclick="adicionarNum(0)">
+                <input type="button" value="." onclick="adicionarNum('.')">
+                <input type="button" value="=" onclick="calcular(resultado.value)">
+            </div>
+        </div>
+    </div>
+
+    <script src="/script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+* {
+    font-family: "Raleway", sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    background-color: rgb(208, 208, 185);
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    position: relative;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primeira-linha {
+    margin-top: 10px;
+    position: relative;
+}
+
+input {
+    padding: 13px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
+
+input[type="text"] {
+    width: 180px;
+    height: 30px;
+    border-radius: 18px;
+    font-size: 18px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#limpar {
+    background-color: brown;
+}
